@@ -1,0 +1,153 @@
+@charset 'UTF-8';
+
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	font-family: "poppins";
+	color:#8B949E;
+	font-weight:normal;
+	font-size:100%;
+}
+
+li{list-style:none;}
+
+a{text-decoration:none;}
+
+@font-face {
+  font-family: "poppins";
+  src: url("./fonts/poppins.woff") format("woff")
+}
+
+:root {
+	--theme: #08212B;
+	--blue: #0076EA;
+	--red: crimson;
+	--orange: orange;
+}
+::-webkit-scrollbar {
+	background:#444a;
+ 	width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa; 
+}
+
+body{background-color:var(--theme);}
+
+.header{
+	width: 100%;
+	display: block;
+	padding: 50px 0px;
+	background-color: var(--theme);
+}
+
+.container, .title-container{
+	width: 70%;
+	margin:auto;
+}
+
+.menu-container{
+	display: grid;
+	grid-template-columns: 8fr 2fr;
+	gap: 2fr;
+	align-items:center;
+	justify-content: space-between;
+}
+.menu-container select,
+.menu-container a{
+	display: block;
+	padding: 8px 15px;
+}
+.menu-container select{	
+	width: 78%;
+	outline: none;
+	background-color: #151B1E;
+	border-radius: 3px;
+	color: #fff;
+	border: .5px solid #0076EA;
+}
+.menu-container select option{
+	background-color: var(--theme);
+	color: #fff;
+}
+
+.menu-container a{
+	background-color: var(--blue);
+	
+	color: #fff;
+	text-align: center;
+	border-radius: 3px;
+}
+
+.title-container{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.title-container h1{
+	font-size: 30px;
+	color: #fff;
+}
+.title-container div div:first-child{
+	padding: 10px 0 100px 0;
+	width: 100%;
+}
+.title-container div p{color:#0076EA;}
+
+.btn{
+	text-align: center;
+	border-radius: 3px;
+	padding: 8px 15px;
+	cursor: pointer;
+	border: none;
+	outline: none;
+}
+
+.btn-blue{
+	background-color: var(--blue);
+	color: #fff;
+}
+
+.btn-red{
+	background-color: var(--red);
+	color: #fff;
+}
+.btn-orange{
+	background-color: var(--orange);
+	color: #fff;
+	margin-left: 8px;
+}
+
+.footer{
+	background-color: #0076EA;
+	width: 100%;
+	display:block;
+	position: fixed;
+	bottom: 0;
+	padding: 10px 0;
+}
+
+.footer p{
+	color: #fff;
+	text-align: center;
+}
+
+.author{
+	padding: 0px 20px;
+}
+.author figure img {
+	border-radius: 50%;
+}
+
+.author a{
+	width: 200px;
+	display: block;
+	margin-top: 20px;
+}
+.about{color: orange; text-decoration: underline;}
