@@ -89,7 +89,7 @@ function createLink (body, { caption }) {
 cards.forEach(createCard)
 
 function goToRepository () {
-	const repositoryName = 'https://github.com/gerafimjoaquim/todo-list'
+	const repositoryName = 'https://github.com/gerafimjoaquim/cards-elegantes'
 
 	setAttribute(btnGoToRepository, 'target', '_blank')
 	setAttribute(btnGoToRepository, 'href', repositoryName)
